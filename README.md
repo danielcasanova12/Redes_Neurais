@@ -1,6 +1,6 @@
-## Redes Neurais (II)
+# Redes Neurais (II)
 
-Neurônio Artificial: Um neurônio tem uma representação muito parecida com esta imagem abaixo:
+## Neurônio Artificial: Um neurônio tem uma representação muito parecida com esta imagem abaixo:
 
 
 Ele tem as entradas que em um problema real por exemplo valor de um lote: seriam as características do lote como tamanho,localização,preço médio por metro quadrado. Os Pesos são parâmetros que são ajustáveis e que medem o desempenho e controlam o comportamento da nossa rede.
@@ -14,7 +14,7 @@ Logo nossa função Step function deve nos retornar 1.
 Redes multicamadas(Multilayer perceptron)
 Estas redes podem ter várias camadas escondidas entre os nossos pesos e a nossa saída, este tipo de rede é usado para modelos não linearmente separáveis.
 
-Sigmoid(função sigmóide)
+## Sigmoid(função sigmóide)
 Está função nos retorna um valor entre 0 e 1 sua fórmula é
 
 
@@ -123,7 +123,7 @@ Temos aqui os pesos antigos e os novos pesos
 
 Assim concluímos a atualização dos valores, lembrando que fizemos apenas a primeira interação ou a primeira época.
 
-Bias
+## Bias
 O bias atua como um ajuste fino, ele nos ajuda a ter uma maior precisão fazendo a rede aprender e se adaptar melhor aos dados do modelo.
 ex: se nossa entrada for 0 nossa rede irá zerar,o bias evita que isso aconteça, ele  já está implementado nas bibliotecas de deep learning que você usará, como TensorFlow e PyTorch. Não é necessário configurá-lo manualmente.
 Nesta imagem abaixo vemos que foram adicionados 2 novos neurônios com pesos estes neurônios foram adicionados pelo bias normalmente eles recebem o valor 1.
@@ -131,13 +131,13 @@ Nesta imagem abaixo vemos que foram adicionados 2 novos neurônios com pesos est
 
 
 
-Erro
+## Erro
 Os algoritmos de erros servem para medir a diferença entre as saídas da rede e as saídas desejadas.Este valor do erro é usado para ajustar os pesos com o objetivo de melhorar o desempenho da rede.
 Função simples para calcular o erro:
 Existem várias funções para calcular o erro, anteriormente usamos uma função muito  simples que fazíamos uma subtração do valor da resposta certa pela resposta calculada
 
 
-Mean square error(MSE)
+## Mean square error(MSE)
 Sua fórmula é:
 
 fi = saída esperada
@@ -148,7 +148,7 @@ Root mean square error(RMSE)
 É muito parecido com o MSE, a sua única diferença é que ele faz a raiz quadrada do erro.
 
 
-Gradient Descent
+## Gradient Descent
 
 Batch Gradient Descent (BGD):
 Serve para calcular os pesos e ajustá-los conforme vai calculando, ele utiliza MSE ou RMSE para medir as discrepâncias entre as previsões e os valores reais.Ele é muito bom pois aumenta a precisão, é ideal para pequenos datasets.
@@ -161,16 +161,16 @@ Mini-Batch Gradient Descent (MBGD):
 
 
 
-Funções de Ativação 
+## Funções de Ativação 
 Step function(Função degrau)
 Esta função nos devolve um número 0 ou 1,ela é usada apenas para problemas linear mentes separáveis 
 
 
-Sigmoide
+## Sigmoide
 
 A função sigmoide mapeia qualquer número real para um valor entre 0 e 1. Isso a torna útil para problemas de classificação binária em machine learning, onde estamos tentando prever se uma entrada pertence a uma de duas classes possíveis.
 
-Hyperbolic tanget
+## Hyperbolic tanget
 
 Retorna um número entre 1 e -1, também é muito boa para problemas de classificação binária.
 
