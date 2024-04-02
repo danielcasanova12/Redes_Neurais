@@ -174,13 +174,13 @@ A função sigmoide mapeia qualquer número real para um valor entre 0 e 1. Isso
 
 Retorna um número entre 1 e -1, também é muito boa para problemas de classificação binária.
 
-ReLU
+## ReLU
 
 
 ReLU mapeia qualquer número negativo para 0 e mantém qualquer número positivo como está.
 
 
-Linear
+## Linear
 
 Está função retorna o que recebe ex: se recebe 5 retorna 5.
 
